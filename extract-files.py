@@ -19,13 +19,20 @@ from extract_utils.fixups_blob import (
 from extract_utils.module import lib_fixups_user_type
 
 namespace_imports = [
-    'hardware/qcom-caf/sm8550',
+    'hardware/qcom-caf/sm8650',
     'vendor/qcom/opensource/commonsys-intf/display',
-    'vendor/sony/sm8550-common',
+    'vendor/sony/sm8650-common',
 ]
 
 blob_fixups: blob_fixups_user_type = {
-    'vendor/lib64/libarcsoft_hdr_adapter.so': blob_fixup()
+    ('vendor/lib64/libarcsoft_dual_bokeh_adapter.so',
+     'vendor/lib64/libarcsoft_hdr_adapter.so',
+     'vendor/lib64/libarcsoft_high_dynamic_range_v5.so',
+     'vendor/lib64/libarcsoft_low_light_hdr.so',
+     'vendor/lib64/libarcsoft_scbokeh_image.so',
+     'vendor/lib64/libarcsoft_scbokeh_preview.so',
+     'vendor/lib64/libarcsoft_scbokeh_video.so',
+     'vendor/lib64/libarcsoft_single_bokeh_adapter.so'): blob_fixup()
     .add_needed(
         'liblog.so',
     )
@@ -36,12 +43,10 @@ blob_fixups: blob_fixups_user_type = {
     .replace_needed(
         'android.hardware.light-V1-ndk_platform.so', 'android.hardware.light-V1-ndk.so'
     ),
-    'vendor/lib64/camx.provider-impl.so': blob_fixup()
-        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }
 
 module = ExtractUtilsModule(
-    'pdx234',
+    'pdx245',
     'sony',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
@@ -50,6 +55,6 @@ module = ExtractUtilsModule(
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(
-        module, 'sm8550-common', module.vendor
+        module, 'sm8650-common', module.vendor
     )
     utils.run()

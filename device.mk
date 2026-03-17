@@ -22,12 +22,12 @@
 # definition file).
 #
 
-# Inherit from sony sm8550-common
-$(call inherit-product, device/sony/sm8550-common/common.mk)
+# Inherit from sony sm8650-common
+$(call inherit-product, device/sony/sm8650-common/common.mk)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1440
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -38,15 +38,15 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0
 
 # NFC
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nxp-typef.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-typef.conf
 
 # Overlays
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     SonyPDX234SystemUIRes \
     SonyPDX234NfcNciRes
 
-DEVICE_PACKAGE_OVERLAYS += \
+#DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 # Soong namespaces
@@ -54,4 +54,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/sony/pdx234/pdx234-vendor.mk)
+$(call inherit-product, vendor/sony/pdx245/pdx245-vendor.mk)
