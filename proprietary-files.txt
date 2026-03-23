@@ -672,7 +672,7 @@ vendor/firmware/vpu33_4v.mbn
 vendor/firmware/vpu33_4v_unsigned.mbn
 
 # WiFi
-vendor/etc/wifi/bdwlan.elf
-vendor/etc/wifi/bdwlan.e21
-vendor/etc/wifi/regdb.bin
+vendor/etc/wifi/bdwlan.elf;SYMLINK=vendor/firmware/kiwi/bdwlan.elf
+vendor/etc/wifi/bdwlan.e21;SYMLINK=vendor/firmware/kiwi/bdwlan.e21
+vendor/etc/wifi/regdb.bin;SYMLINK=vendor/firmware/kiwi/regdb.bin
 vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini
