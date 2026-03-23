@@ -25,13 +25,13 @@
 # Inherit from sony sm8650-common
 $(call inherit-product, device/sony/sm8650-common/common.mk)
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
-
-# Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
