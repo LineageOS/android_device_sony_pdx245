@@ -1,8 +1,8 @@
 # Stock package version: XQ-DQ72_Customized_SEA-67.2.A.3.141
 
 # ACDB
-vendor/etc/acdbdata/pineapple_qrd/Sony_acdb_cal.acdb:vendor/etc/acdbdata/pineapple_qrd/acdb_cal.acdb
-vendor/etc/acdbdata/pineapple_qrd/Sony_workspaceFileXml.qwsp:vendor/etc/acdbdata/pineapple_qrd/workspaceFileXml.qwsp
+vendor/etc/acdbdata/pineapple_qrd/Sony_acdb_cal.acdb
+vendor/etc/acdbdata/pineapple_qrd/Sony_workspaceFileXml.qwsp
 
 # Audio FX Modules
 vendor/etc/zoom_noise_reduction/znr_default_44k.tbl
@@ -645,14 +645,6 @@ vendor/gpu/kbc/unified_kbcs_64.bin
 vendor/gpu/kbc/unified_ksqs.bin
 
 # Other maybe needed firmware
-vendor/firmware/cs40l20.bin
-vendor/firmware/cs40l25a_a2h.bin
-vendor/firmware/cs40l25a_a2h.wmfw
-vendor/firmware/cs40l25a_a2h1.bin
-vendor/firmware/cs40l25a_a2h2.bin
-vendor/firmware/cs40l25a_a2h3.bin
-vendor/firmware/cs40l25a_cal.bin
-vendor/firmware/cs40l25a_cal.wmfw
 vendor/firmware/l-cs35l45-dsp1-spk-cali.bin
 vendor/firmware/l-cs35l45-dsp1-spk-cali.wmfw
 vendor/firmware/l-cs35l45-dsp1-spk-prot.bin
@@ -661,6 +653,14 @@ vendor/firmware/r-cs35l45-dsp1-spk-cali.bin
 vendor/firmware/r-cs35l45-dsp1-spk-cali.wmfw
 vendor/firmware/r-cs35l45-dsp1-spk-prot.bin
 vendor/firmware/r-cs35l45-dsp1-spk-prot.wmfw
+vendor/firmware/cs40l20.bin
+vendor/firmware/cs40l25a_a2h.bin
+vendor/firmware/cs40l25a_a2h.wmfw
+vendor/firmware/cs40l25a_a2h1.bin
+vendor/firmware/cs40l25a_a2h2.bin
+vendor/firmware/cs40l25a_a2h3.bin
+vendor/firmware/cs40l25a_cal.bin
+vendor/firmware/cs40l25a_cal.wmfw
 
 # Touchscreen firmware
 vendor/firmware/touch_module_id_0x03.img
