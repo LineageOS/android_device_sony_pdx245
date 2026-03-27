@@ -645,6 +645,12 @@ vendor/gpu/kbc/sequence_manifest.bin
 vendor/gpu/kbc/unified_kbcs_64.bin
 vendor/gpu/kbc/unified_ksqs.bin
 
+# Neural networks
+vendor/lib64/rfs/dsp/libVppAisQnnHtp.so
+vendor/lib64/rfs/dsp/libVppFrcQnnHtp.so
+vendor/lib64/qnn/libQnnHtp.so
+vendor/lib64/qnn/libQnnHtpV75Stub.so
+
 # Other maybe needed firmware
 vendor/firmware/l-cs35l45-dsp1-spk-cali.bin
 vendor/firmware/l-cs35l45-dsp1-spk-cali.wmfw
