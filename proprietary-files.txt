@@ -433,6 +433,7 @@ vendor/lib64/hw/com.qti.chi.offline.so
 vendor/lib64/hw/com.qti.chi.override.so;DISABLE_DEPS
 vendor/lib64/libOpenCL_adreno.so
 vendor/lib64/libSnpeHtpPrepare.so
+vendor/lib64/libSnpeHtpV75Stub.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
 vendor/lib64/libarcsoft_dual_bokeh_adapter.so
