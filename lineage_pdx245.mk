@@ -31,8 +31,8 @@ PRODUCT_BUILD_PROP_OVERRIDES := \
     DeviceProduct=XQ-EC54 \
     SystemDevice=XQ-EC54 \
     SystemName=XQ-EC54 \
-    BuildFingerprint=Sony/XQ-EC54/XQ-EC54:15/67.2.A.3.141/067002A003014100521143226:user/release-keys \
-    BuildDesc="XQ-EC54-user 15 67.2.A.3.141 067002A003014100521143226 release-keys"
+    BuildFingerprint=Sony/XQ-EC54_EEA/XQ-EC54:16/69.2.A.4.16/069002A004001601747781348:user/release-keys \
+    BuildDesc="XQ-EC54_EEA-user 16 69.2.A.4.16 069002A004001601747781348 release-keys"
 
 PRODUCT_NAME := lineage_pdx245
 PRODUCT_DEVICE := pdx245
