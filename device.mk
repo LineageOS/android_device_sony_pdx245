@@ -38,11 +38,11 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0
 
 # Overlays
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     SonyPDX245SystemUIRes \
     SonyPDX245NfcNciRes
 
-#DEVICE_PACKAGE_OVERLAYS += \
+DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 # Soong namespaces
