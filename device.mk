@@ -39,8 +39,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 #PRODUCT_PACKAGES += \
-    SonyPDX234SystemUIRes \
-    SonyPDX234NfcNciRes
+    SonyPDX245SystemUIRes \
+    SonyPDX245NfcNciRes
 
 #DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
