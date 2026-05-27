@@ -43,6 +43,8 @@ blob_fixups: blob_fixups_user_type = {
     .replace_needed(
         'android.hardware.light-V1-ndk_platform.so', 'android.hardware.light-V1-ndk.so'
     ),
+    'vendor/etc/init/vendor.somc.hardware.camera.provider@1.0-service.rc': blob_fixup()
+        .regex_replace('group camera', 'group camera wakelock')
 }
 
 module = ExtractUtilsModule(
