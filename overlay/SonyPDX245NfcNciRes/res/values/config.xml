@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2023 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-
 <resources>
-    <string-array name="config_skuSupportsSecureNfc">
+    <!-- List of SKUs where Secure NFC functionality is supported -->
+    <string-array name="config_skuSupportsSecureNfc" translatable="false">
         <item>c000002</item>
         <item>c000018</item>
         <item>c000027</item>
