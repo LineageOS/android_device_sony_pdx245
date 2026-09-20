@@ -40,9 +40,10 @@ blob_fixups: blob_fixups_user_type = {
         'libcutils.so',
     ),
     'vendor/lib64/libcammw.so': blob_fixup()
-    .replace_needed(
-        'android.hardware.light-V1-ndk_platform.so', 'android.hardware.light-V1-ndk.so'
-    ),
+        .sig_replace('5B 01 80 52 08 A9 47 F9', 'FB 1F 80 52 08 A9 47 F9')
+        .replace_needed(
+            'android.hardware.light-V1-ndk_platform.so', 'android.hardware.light-V1-ndk.so'
+        ),
     'vendor/etc/init/vendor.somc.hardware.camera.provider@1.0-service.rc': blob_fixup()
         .regex_replace('group camera', 'group camera wakelock')
 }
